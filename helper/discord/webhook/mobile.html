@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discord Webhook Sender</title>
+        <link type="text/css" rel="stylesheet" href="main.css">
+        <script src="send.js"></script>
+        <script src="toggle.js"></script>
+    <!-- Discord Embed -->
+        <meta property="og:site_name" content="https://lynnux.xyz/helper/webhook/" />
+        <meta property="og:title" content="Lynnux - Webhook Sender" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="A website that can help you send webhooks to discord." />
+        <meta property="og:image" content="/assets/images/favicon.png">
+        <meta property="og:image:secure_url" content="https://lynnux.xyz/assets/images/favicon.png">
+        <meta name="p:domain_verify" content="8c72dddc235011ec65f54fc3e0fcc7ad"/>
+        <meta name="theme-color" content="#ff47ff">
+    <!-- favicon -->
+        <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon"/>
+    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YSD2Q72W1H"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-YSD2Q72W1H');
+        </script>
+    </head>
+
+    <body bgcolor="#23272A">
+        <div class="left" id="left_side">
+            <strong class="head"><Datag>Discord</Datag> Webhook sender.</strong>
+            <div class="toggle">
+                <label class="container">
+                    <input type="checkbox" id="field_toggle" onclick="toggle()">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                <h3>Toggle embed</h3>
+            </div>
+            <br><br>
+            <h3>Webhook *</h3>
+            <input class="input" id="url" type="text" name="link" placeholder="Webhook url">
+            <h3>Username *</h3>
+            <input class="input" id="name" type="text" name="Username (nick of hook)" placeholder="nickname of the webhook">
+            <h3>Avatar</h3>
+            <input class="input" id="avatar" type="text" name="Avatar of bot" placeholder="image for the webhook avatar">
+            <h3>Text</h3>
+            <input class="input" id="content" type="text" name="msg content" placeholder="message for the webhook to send outside the embed">
+            <button id="send" class="button is-primary" onclick="send()">Send</button>
+        </div>
+        <div class="embed" id="embed">
+            <strong class="head">Embed</strong>
+            <br><br>
+            <h3>Title</h3>
+            <input class="input" id="title" type="text" name="title" placeholder="title">
+            <h3>Title URL</h3>
+            <input class="input" id="title_link" type="text" name="title_link" placeholder="title url ex: https://lynnux.xyz">
+            <h3>Author</h3>
+            <input class="input" id="author_name" type="text" name="author name" placeholder="embed author name">
+            <h3>Author Icon</h3>
+            <input class="input" id="author_icon" type="text" name="author Avatar URL" placeholder="embed author avatar">
+            <h3>Author Link</h3>
+            <input class="input" id="author_link" type="text" name="author URL" placeholder="author link">
+            <h3>Sidebar Color</h3>
+            <input class="input" id="color" type="text" name="hex color" placeholder="#123456  | Must include #">
+            <h3>Footer</h3>
+            <input class="input" id="footer" type="text" name="footers" placeholder="embed footer">
+            <h3>Footer icon</h3>
+            <input class="input" id="footer_icon" type="text" name="footer_icons" placeholder="embed footer icon">
+            <br><br>
+            <strong class="head">Fields</strong>
+            <br><br>
+            <strong>First field</strong> <label class="container"><input type="checkbox" id="field1"><span class="checkmark"></span></label>
+            <h3>First field title</h3>
+            <h1>Short</h1>
+            <input class="input" id="embed_title1" type="text" name="embed_title1" placeholder="First field title">
+            <h3>First field text</h3>
+            <input class="input" id="embed_content1" type="text" name="embed_content1" placeholder="First field text">
+            <strong>Seond field</strong> <label class="container"><input type="checkbox" id="field2"><span
+                    class="checkmark"></span></label>
+            <h3>Second field title</h3>
+            <h1>Short</h1>
+            <input class="input" id="embed_title2" type="text" name="embed_title2" placeholder="Second field title">
+            <h3>Second field text</h3>
+            <input class="input" id="embed_content2" type="text" name="embed_content2" placeholder="Second field text">
+            <strong>Third field</strong>
+            <label class="container"><input type="checkbox" id="field3">
+                <span class="checkmark"></span>
+            </label>
+            <h3>Third field text</h3>
+            <h1>Short</h1>
+            <input class="input" id="embed_title3" type="text" name="embed_title3" placeholder="Third field title">
+            <h3>Third field text</h3>
+            <input class="input" id="embed_content3" type="text" name="embed_content3" placeholder="Third field text">
+            <strong>Fourth field</strong> <label class="container"><input type="checkbox" id="field4"><span class="checkmark"></span></label>
+            <h3>Fourth field title</h3>
+            <h1>Short</h1>
+            <input class="input" id="embed_title4" type="text" name="embed_title4" placeholder="Fourth field title">
+            <h3>Fourth field text</h3>
+            <input class="input" id="embed_content4" type="text" name="embed_content4" placeholder="Fourth field text">
+            <h3>Thumbnail</h3>
+            <input class="input" id="thumb" type="text" name="thumb" placeholder="Thumbnail">
+            <h3>Image</h3>
+            <input class="input" id="image" type="text" name="image" placeholder="Image to be included in the message">
+            <button id="send" class="button is-primary" onclick="send()" style="margin: 10px;">Send</button>
+        </div>
+        <br><br>
+        <br><br>
+        <center>
+            <a>Desktop version available </a>
+            <a href="./">here!</a>
+        </center>
+    </body>
+</html>

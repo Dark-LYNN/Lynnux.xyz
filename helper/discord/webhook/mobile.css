@@ -1,0 +1,125 @@
+*{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 30
+}
+
+strong.head{
+    font-size: 200%;
+    margin-bottom: 10px;
+}
+div.embed{
+    float: left;
+    display: none;
+    width: 95%;
+    margin: 10px;
+}
+div.toggle{
+    float: right;
+}
+strong.main{
+    float: left;
+}
+div.left{
+    float: left;
+    width: 95%;
+    margin: 10px;
+}
+
+strong, strong.main {
+    margin-top: 10px;
+    color: #7289DA;
+}
+h1{
+    margin-top: 0px;
+    float: right;
+    margin-right: 110px;
+}
+h1, h3, h4, a{
+    color: #fff;
+}
+h2{
+    color:#ff8080;
+}
+.input {
+    background: #2C2F33;
+    color: #99AAB5; 
+    border-color: #23272A;
+    border-radius: 10px;
+    width: 100%
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    width: 100%;
+    background-color: #2C2F33;
+    color: white;
+    padding: 4px 6px;
+    margin: 1px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button:hover {
+    background-color: #7289DA;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    float: right;
+    position: relative;
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    border: 2px solid #fff;
+    border-radius: 6px;
+    float: right;
+    position: relative;
+    top: 100;
+    left: 0;
+    height: 60px;
+    width: 60px;
+    background-color: #2C2F33;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    float: right;
+    background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    float: right;
+    background-color: #7289DA;
+    border: 1px solid #7289DA;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    float: right;
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    float: right;
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    float: right;
+    left: 16px;
+    top: 0px;
+    width: 24px;
+    height: 48px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
