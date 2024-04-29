@@ -2,15 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -1879,3 +1870,61 @@
     .timeline-text { max-width: 700px; }
   
   }
+
+/*-----------------------------------*\
+  #Quick Apply
+\*-----------------------------------*/
+
+.center-x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.image-glow {
+  top: 3%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px; 
+  box-shadow: 0 0 10px 5px rgba(255, 149, 246, 0.267);
+}
+
+/*-----------------------------------*\
+  #Blogs
+\*-----------------------------------*/
+
+.article-topic-links {
+  color: azure;
+  font-size: medium;
+  margin-top: -20px;
+  padding-bottom: 5px;
+  font-weight: 250;
+}
+
+.milfsplaza-img-container {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.milfsplaza-img-container img {
+  width: 90%; 
+  height: auto;
+}
+
+.blog_title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 150%;
+}
