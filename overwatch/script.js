@@ -1,5 +1,5 @@
 // Set the target timestamp (1718906400 in UNIX time)
-const targetTimestamp = 1718906400 * 1000; // Convert to milliseconds
+const targetTimestamp = 1724781600 * 1000; // Convert to milliseconds
 
 // Function to update the countdown timer
 function updateCountdown() {
@@ -7,12 +7,13 @@ function updateCountdown() {
     const distance = targetTimestamp - now;
 
     // Calculate hours, minutes, and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="countdown"
-    document.getElementById("countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     
     // If the countdown is over, display some text
     if (distance < 0) {
