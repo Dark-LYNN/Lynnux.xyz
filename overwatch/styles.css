@@ -18,6 +18,7 @@ body {
 
 h1 {
     margin-bottom: 20px;
+    font-family: Arial, sans-serif; /* Default header font */
 }
 
 #countdown {
@@ -27,7 +28,14 @@ h1 {
     text-shadow: 1px 1px 2px #fff; /* Default text shadow */
 }
 
-.backgroudn-choise{
+
+.controls {
+    margin-top: 20px;
     position: absolute;
     bottom: 5%;
+
+}
+
+.color-pickers, .font-selectors {
+    margin-bottom: 10px;
 }

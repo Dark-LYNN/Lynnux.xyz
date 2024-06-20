@@ -13,7 +13,7 @@ function updateCountdown() {
 
     // Display the result in the element with id="countdown"
     document.getElementById("countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
-
+    
     // If the countdown is over, display some text
     if (distance < 0) {
         clearInterval(countdownInterval);
@@ -55,6 +55,14 @@ document.getElementById('textColorPicker').addEventListener('input', function() 
     updateTextShadow(this.value);
 });
 
+document.getElementById('headerFontPicker').addEventListener('change', function() {
+    document.getElementById("headerText").style.fontFamily = this.value;
+});
+
+//.  Event listener for countdown font change
+document.getElementById('countdownFontPicker').addEventListener('change', function() {
+    document.getElementById("countdown").style.fontFamily = this.value;
+});
 
 // Update the countdown every second
 const countdownInterval = setInterval(updateCountdown, 1000);
